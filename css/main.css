@@ -1,0 +1,229 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-top: 0;
+}
+
+.navbar {
+    height: 115px;
+    background: #424242;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.navbar-right {
+    margin-top: 30px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a {
+    background: none;
+    color: white;
+    border-bottom: 4px solid #E91E63;
+}
+
+.jumbotron {
+    background: #424242;
+    border: 0;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.page-1 {
+    color: white;
+}
+
+.page-1 h2 {
+    font-weight: 400;
+}
+
+.side-download {
+    padding-top: 100px;
+    padding-right: 0;
+}
+
+.side-download .firefox {
+    padding-right: 5px;
+}
+
+.side-download .chrome {
+    padding-left: 5px;
+}
+
+.side-download .tell-me-more {
+    margin-top: 10px;
+}
+
+.side-laptop {
+    padding-left: 0;
+}
+
+.btn-firefox, .btn-chrome, .btn-tell-me-more {
+    width: 100%;
+    border: 0;
+    font-size: 15px;
+    font-weight: 100;
+    white-space: normal;
+}
+
+.btn-firefox, .btn-chrome {
+    text-align: left;
+    padding-right: 60px;
+    background-size: 40px 40px !important;
+    background-position: 90% 50% !important;
+    background-repeat: no-repeat !important;
+}
+
+.btn-firefox {
+    background: #903051 url('../img/logo-firefox.png');
+}
+
+.btn-firefox:focus, .btn-firefox:hover {
+    background-color: #6c2638;
+}
+
+.btn-chrome {
+    background: #6C6B6B url('../img/logo-chrome.png');
+}
+
+.btn-chrome:focus, .btn-chrome:hover {
+    background-color: #525151;
+}
+
+.btn-tell-me-more {
+    background: #2196F3;
+}
+
+.btn-tell-me-more:focus, .btn-tell-me-more:hover {
+    background: #1f72c7;
+}
+
+.page-2 {
+    color: white;
+    background: #2196F3;
+}
+
+.page-2 h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.page-3 h2, .page-3 h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.page-3 img {
+    margin: 0 auto;
+    display: block;
+}
+
+.page-3 p {
+    text-align: center;
+}
+
+.page-4 {
+    color: white;
+    background: #E91E63;
+}
+
+.page-4 h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.testimonial {
+    text-align: center;
+}
+
+.testimonial-author {
+    display: block;
+    margin: -10px 0 30px 0;
+    text-align: right;
+}
+
+.page-5 {
+    background: #F7F8F9;
+}
+
+.page-5 h2, .page-5 h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.page-5 img {
+    margin: 0 auto;
+    display: block;
+}
+
+.page-5 p {
+    text-align: center;
+}
+
+.three-things .box {
+    background: white;
+    padding: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.three-things .box .person {
+    border-radius: 75px;
+}
+
+.three-things .box .title {
+    color: #02B9D5;
+    font-size: 24px;
+}
+
+.three-things .box .description {
+    color: #8C8C8E;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.three-things .box .linkedin a {
+    color: #8C8C8E;
+    display: block;
+    margin: 30px auto 0 auto;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    background: url('../img/linkedin.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.page-6 {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+.page-6 a.contact {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.page-footer {
+    font-size: 11px;
+    color: white;
+    margin-bottom: -20px;
+    padding: 80px 0 10px 0;
+    background: #2F2F33 url('../img/logo-footer.png');
+    background-size: 45px 51px;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px !important;
+}
+
+.psst {
+    font-size: 12px;
+    text-align: right;
+}
