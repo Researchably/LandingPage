@@ -47,7 +47,7 @@ body {
 }
 
 .side-download .chrome {
-
+padding-left: 5px;
 }
 
 .side-download .tell-me-more {
@@ -67,7 +67,7 @@ body {
 }
 
 .btn-firefox, .btn-chrome {
-    text-align: left;
+    text-align: center;
     padding-right: 60px;
     background-size: 40px 40px !important;
     background-position: 90% 50% !important;
