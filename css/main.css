@@ -3,6 +3,17 @@ body {
     padding-top: 0;
 }
 
+.container-mobile {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    max-width: 380px;
+}
+
+.container-mobile img {
+    margin: 20px 0;
+}
+
 .navbar {
     height: 115px;
     background: #424242;
