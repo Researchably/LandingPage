@@ -1,3 +1,8 @@
+html, body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     padding-top: 0;
@@ -7,17 +12,21 @@ body {
     text-align: center;
     float: none;
     margin: 0 auto;
-    max-width: 380px;
+    max-width: 480px;
+
+    font-size: 21px;
+    font-weight: 200;
 }
 
 .container-mobile img {
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .navbar {
     height: 115px;
     background: #424242;
     border: 0;
+    border-radius: 0;
     margin-bottom: 0;
 }
 
@@ -154,20 +163,42 @@ body {
 }
 
 .page-5 {
+    color: white;
+    text-align: center;
+}
+
+.page-5 .container {
+    max-width: 900px;
+}
+
+
+.page-5 h2 {
+    font-weight: 400;
+}
+
+.page-5 h3 {
+    margin: 40px 0;
+}
+
+.page-5 p {
+
+}
+
+.page-6 {
     background: #F7F8F9;
 }
 
-.page-5 h2, .page-5 h3 {
+.page-6 h2, .page-6 h3 {
     text-align: center;
     font-weight: 400;
 }
 
-.page-5 img {
+.page-6 img {
     margin: 0 auto;
     display: block;
 }
 
-.page-5 p {
+.page-6 p {
     text-align: center;
 }
 
@@ -206,13 +237,13 @@ body {
     background-position: 50% 50%;
 }
 
-.page-6 {
+.page-7 {
     color: white;
     text-align: center;
     font-weight: 200;
 }
 
-.page-6 a.contact {
+.page-7 a.contact {
     font-size: 20px;
     font-weight: 300;
     color: white;
@@ -237,4 +268,43 @@ footer p {
 .psst {
     font-size: 12px;
     text-align: right;
+}
+
+@media (max-width: 1200px) {
+    .navbar-brand {
+        width: 100%;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-brand img {
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .btn-chrome {
+        background-position: 95% 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-download {
+        padding-top: 0px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .btn-chrome {
+        background-position: 90% 50% !important;
+    }
+
+    .side-laptop {
+        margin: 20px -30px 0 -30px;
+        padding: 0;
+    }
 }
