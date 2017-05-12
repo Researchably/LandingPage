@@ -8,6 +8,11 @@ body {
     padding-top: 0;
 }
 
+.container {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 .container-mobile {
     text-align: center;
     float: none;
