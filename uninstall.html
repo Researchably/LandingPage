@@ -71,6 +71,7 @@
                         href="mailto:contact@fusemind.org">contact@fusemind.org</a>
                 </div>
                 <form id="uninstall-form" action="https://formspree.io/contact@fusemind.org" method="POST">
+                    <input type="hidden" name="token">
                     <div class="form-check">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="reason-1">
@@ -171,6 +172,27 @@
 
     ga('create', 'UA-96648998-2', 'auto');
     ga('send', 'pageview');
+</script>
+
+<script>
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
+    jQuery(window).load(function() {
+       jQuery('[name=token]').val(getUrlParameter('token'));
+    });
 </script>
 
 </body>
