@@ -214,7 +214,7 @@ body {
     text-align: center;
 }
 
-.three-things .box .person {
+img.person {
     border-radius: 75px;
 }
 
@@ -240,6 +240,59 @@ body {
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.page-uninstall {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+.page-uninstall h3 {
+    text-align: center;
+}
+
+.page-uninstall p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.page-uninstall .form {
+    text-align: left;
+}
+
+.page-uninstall .form .form-check-label {
+    font-weight: 300;
+}
+
+.page-uninstall .form h3 {
+    margin: 20px 0;
+}
+
+.page-uninstall .form .form-check {
+    margin: 5px 0;
+}
+
+.page-uninstall .form .form-group {
+    margin: 10px 0;
+}
+
+.page-uninstall .btn-chrome {
+    background-position: 80% 50% !important;
+}
+
+.page-uninstall .btn-tell-me-more {
+    padding: 15px;
+}
+
+.page-uninstall .message {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.page-uninstall img {
+    margin: 10px auto;
 }
 
 .page-7 {

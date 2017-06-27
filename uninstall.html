@@ -1,0 +1,235 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FuseMind</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://fusemind.org"><img src="img/logo-prototype.png" class="img-responsive"></a>
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#prototype">Prototype</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<div class="jumbotron page-uninstall" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 form">
+                <h3>How come you're uninstalling FuseMind?</h3>
+                <div class="alert alert-success form-success" style="display: none;">
+                    <strong>Thank you!</strong> Your feedback has been sent!
+                </div>
+
+                <div class="alert alert-warning form-warning" style="display: none;">
+                    <strong>Warning!</strong> Something went wrong, please try again or contact us directly <a
+                        href="mailto:contact@fusemind.org">contact@fusemind.org</a>
+                </div>
+                <form id="uninstall-form">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="reason-1">
+                            I don't use Google Scholar enough
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="reason-2">
+                            It doesn't cover any of the papers I'm looking for
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="reason-3">
+                            I don't think it's useful
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="reason-4">
+                            I'm waiting until it gets better
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="reason-5">
+                            I don't understand what it's for
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="reason-6">
+                            I'm concerned about privacy issues
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Type in your email for follow-up" name="email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="textarea" rows="3" placeholder="Is there anything else we can do to improve FuseMind?" name="textarea"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="chrome col-md-6">
+                            <a class="btn btn-primary btn-lg btn-chrome" href="https://chrome.google.com/webstore/detail/fusemind-browser-extensio/nlihfefkglgpehpphdalnkceaejmdnjb?hl=en-GB" target="_blank" role="button">Reinstall!</a>
+                        </div>
+                        <div class="tell-me-more col-md-6">
+                            <button class="btn btn-primary btn-lg btn-tell-me-more" href="#" role="button" type="submit">Submit!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 message">
+                <h2>You're leaving us? 😞</h2>
+                <img src="img/maciej.png" alt="" class="person">
+                <p>Hi! I'm Maciej - co-founder of FuseMind.</p>
+                <p>We're super excited that you decided to try out our extension and we are sorry to see you go!</p>
+                <p>Our prototype is still at a very early stage, but with the help of users like <b>you</b>; we hope one day it'll be one of the most useful tools for academics.</p>
+                <p>We'd really appreciate it if you can let us know what we should do better, so that we can help students & researchers around the world to be as efficient as possible</p>
+                <p>More so, we hope you'll consider stay and help us build the future of academic search. I read every piece of feedback that comes in, so you can be sure that your opinions directly shape our work.</p>
+                <p>Thanks, have a great day!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron page-7" id="contact">
+    <div class="container">
+        <div class="row contact">
+            <p>Looking for a new feature? Keen to meet the team? Want to debate the meaning of life?</p>
+            <a href="mailto:contact@fusemind.org" class="contact">contact@fusemind.org</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron page-footer">
+    <div class="container">
+        <footer>
+            <p>Copyright &copy; 2017. FuseMind Ltd is a registered company in England and Wales</p>
+        </footer>
+        <div class="psst">Psst.. We think you’re awesome!</div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-96648998-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script>
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
+    jQuery('#uninstall-form').submit(function() {
+        var reasons = [];
+
+        for (var i = 1; i <= 6; i++) {
+            var reason = 'reason-' + i;
+            if (jQuery('[name="' + reason + '"]').is(':checked')) {
+                reasons.push(reason);
+            }
+        }
+
+        jQuery.ajax({
+            type: 'POST',
+            url: 'https://api.fusemind.org/v1/log_event',
+            data: JSON.stringify({
+                user: {
+                    token: getUrlParameter('token')
+                },
+                event: {
+                    category: 'browser-extension',
+                    action: 'uninstall-form',
+                    data: {
+                        reasons: reasons,
+                        email: jQuery('[name=email]').val(),
+                        message: jQuery('[name=textarea]').val()
+                    }
+                }
+            }),
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function () {
+                jQuery('.form-warning').hide();
+                jQuery('.form-success').show();
+            },
+            error: function () {
+                jQuery('.form-warning').show();
+                jQuery('.form-success').hide();
+            }
+        });
+
+        return false;
+    });
+</script>
+</body>
+</html>
