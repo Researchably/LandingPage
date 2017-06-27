@@ -70,7 +70,7 @@
                     <strong>Warning!</strong> Something went wrong, please try again or contact us directly <a
                         href="mailto:contact@fusemind.org">contact@fusemind.org</a>
                 </div>
-                <form id="uninstall-form">
+                <form id="uninstall-form" action="https://formspree.io/contact@fusemind.org" method="POST">
                     <div class="form-check">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="reason-1">
@@ -108,11 +108,11 @@
                         </label>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Type in your email for follow-up" name="email">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Type in your email for follow-up" name="_replyto">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="textarea" rows="3" placeholder="Is there anything else we can do to improve FuseMind?" name="textarea"></textarea>
+                        <textarea class="form-control" id="textarea" rows="3" placeholder="Is there anything else we can do to improve FuseMind?" name="message"></textarea>
                     </div>
                     <div class="form-group">
                         <div class="chrome col-md-6">
@@ -173,63 +173,5 @@
     ga('send', 'pageview');
 </script>
 
-<script>
-    var getUrlParameter = function getUrlParameter(sParam) {
-        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-            sURLVariables = sPageURL.split('&'),
-            sParameterName,
-            i;
-
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
-
-            if (sParameterName[0] === sParam) {
-                return sParameterName[1] === undefined ? true : sParameterName[1];
-            }
-        }
-    };
-
-    jQuery('#uninstall-form').submit(function() {
-        var reasons = [];
-
-        for (var i = 1; i <= 6; i++) {
-            var reason = 'reason-' + i;
-            if (jQuery('[name="' + reason + '"]').is(':checked')) {
-                reasons.push(reason);
-            }
-        }
-
-        jQuery.ajax({
-            type: 'POST',
-            url: 'https://api.fusemind.org/v1/log_event',
-            data: JSON.stringify({
-                user: {
-                    token: getUrlParameter('token')
-                },
-                event: {
-                    category: 'browser-extension',
-                    action: 'uninstall-form',
-                    data: {
-                        reasons: reasons,
-                        email: jQuery('[name=email]').val(),
-                        message: jQuery('[name=textarea]').val()
-                    }
-                }
-            }),
-            contentType: 'application/json; charset=utf-8',
-            dataType: 'json',
-            success: function () {
-                jQuery('.form-warning').hide();
-                jQuery('.form-success').show();
-            },
-            error: function () {
-                jQuery('.form-warning').show();
-                jQuery('.form-success').hide();
-            }
-        });
-
-        return false;
-    });
-</script>
 </body>
 </html>
