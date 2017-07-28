@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "addon@example.com": {
+            "updates": [
+                {
+                    "version": "0.813",
+                    "update_link": "https://fusemind-v2.azurewebsites.net/firefox/webextension-0.813.xpi"
+                }
+            ]
+        }
+    }
+}
