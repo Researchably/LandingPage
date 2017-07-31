@@ -67,11 +67,16 @@ body {
     padding-right: 0;
 }
 
+.side-download .row {
+    margin: 0;
+}
+
 .side-download .firefox {
-    padding-right: 5px;
+    padding: 0 0 0 5px;
 }
 
 .side-download .chrome {
+    padding: 0 5px 0 0;
 }
 
 .side-download .tell-me-more {
@@ -108,7 +113,6 @@ body {
 
 .btn-chrome {
     background: #6C6B6B url('../img/logo-chrome.png');
-    padding: 15px;
 }
 
 .btn-chrome:focus, .btn-chrome:hover {
@@ -329,6 +333,22 @@ footer p {
 }
 
 @media (max-width: 1200px) {
+    .side-download {
+        padding-top: 0px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .side-download .chrome, .side-download .firefox {
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .btn-chrome, .btn-firefox {
+        background-position: 90% 50% !important;
+        background-size: 30px 30px !important;
+    }
+
     .navbar-brand {
         width: 100%;
     }
@@ -344,23 +364,9 @@ footer p {
     .nav {
         display: none;
     }
-
-    .btn-chrome {
-        background-position: 95% 50% !important;
-    }
 }
 
 @media (max-width: 992px) {
-    .side-download {
-        padding-top: 0px;
-        padding-right: 15px;
-        text-align: center;
-    }
-
-    .btn-chrome {
-        background-position: 90% 50% !important;
-    }
-
     .side-laptop {
         margin: 20px -30px 0 -30px;
         padding: 0;
@@ -444,6 +450,17 @@ footer p {
 .jivo-btn-light {
    color: #fff;
 }
-..jivo-btn-dark {
+.jivo-btn-dark {
    color: #222;
+}
+
+@media (max-width: 1200px) {
+    .jivo-btn {
+        font-size: 16px;
+        padding-left: 0px !important;
+    }
+
+    .jivo-btn-icon {
+        display: none;
+    }
 }
