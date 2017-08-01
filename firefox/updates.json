@@ -21,6 +21,10 @@
                 {
                     "version": "0.817",
                     "update_link": "https://fusemind-v2.azurewebsites.net/firefox/webextension-0.817.xpi"
+                },
+                {
+                    "version": "0.818",
+                    "update_link": "https://fusemind-v2.azurewebsites.net/firefox/webextension-0.818.xpi"
                 }
             ]
         }
