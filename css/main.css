@@ -371,6 +371,30 @@ img.person {
     color: white;
 }
 
+.page-8 {
+    background: #F7F8F9;
+}
+
+.page-8 h2, .page-8 h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.page-8 .logos {
+    text-align: center;
+    margin: 25px 0 20px 0;
+}
+
+.page-8 .logo {
+    height: 65px;
+    margin: 0 15px;
+}
+
+.page-8 .logo-wide {
+    height: 50px;
+    margin: 7.5px 15px;
+}
+
 .page-footer {
     font-size: 11px;
     color: white;
@@ -423,6 +447,11 @@ footer p {
 
     .nav {
         display: none;
+    }
+
+    .page-8 .logo {
+        display: block;
+        margin: 25px auto;
     }
 }
 
