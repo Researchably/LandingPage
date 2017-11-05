@@ -1,2 +1,2 @@
 # LandingPage
-Landing Page of fusemind.org
+Landing Page of researchably.com
