@@ -224,6 +224,11 @@ img.person {
     font-weight: 400;
 }
 
+.page-discontinue a, .page-discontinue a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .page-uninstall {
     color: white;
     text-align: center;
