@@ -80,6 +80,7 @@ body {
 
 .btn-primary {
     background: #2196F3;
+    text-decoration: none !important;
 }
 
 .btn-primary:focus,
