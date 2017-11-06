@@ -1,0 +1,148 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Researchably</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://researchably.com"><img src="img/logo-beta.png" class="img-responsive"></a>
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#what">What do we do?</a></li>
+                <li><a href="index.html#who">Who are for?</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<div class="jumbotron page-discontinue" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Thank you for trying our extension!</h2>
+                <p>
+                    As we move towards a new product, <b>we are no longer supporting this prototype.</b> 
+                    We recommend you <u>uninstall</u> the extension, as we will not be maintaining it. 
+                </p>
+
+                <h2>Interested in our product</h2>
+                <p>Let us know if you're interested in exclusive early-bird access to our new discovery tool.</p>
+                <a class="btn btn-primary btn-lg" href="mailto:contact@researchably.org" role="button" 
+                   style="width: 250px;">
+                    Get exclusive access!
+                </a>
+
+                <h2>Sad to see the extension go?</h2>
+                <p>
+                    If there's enough interest, we might consider keeping our browser extension alive. 
+                    Let us know if you're keen.
+                </p>
+                <a class="btn btn-primary btn-lg" href="mailto:contact@researchably.org" role="button" 
+                   style="width: 250px;">
+                    Keep it alive!
+                </a>
+            </div>
+            <div class="col-md-6">
+                <img src="img/uninstall.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron page-7" id="contact">
+    <div class="container">
+        <div class="row contact">
+            <p>Looking for a new feature? Keen to meet the team? Want to debate the meaning of life?</p>
+            <a href="mailto:contact@researchably.org" class="contact">contact@researchably.org</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron page-footer">
+    <div class="container">
+        <footer>
+            <p>Copyright &copy; 2017. Researchably Ltd is a registered company in England and Wales</p>
+        </footer>
+        <div class="psst">Psst.. We think you’re awesome!</div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-96648998-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script>
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
+    jQuery(window).load(function() {
+       jQuery('[name=token]').val(getUrlParameter('token'));
+    });
+</script>
+
+</body>
+</html>

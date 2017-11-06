@@ -215,6 +215,15 @@ img.person {
     background-position: 50% 50%;
 }
 
+.page-discontinue {
+    color: white;
+    font-weight: 200;
+}
+
+.page-discontinue b {
+    font-weight: 400;
+}
+
 .page-uninstall {
     color: white;
     text-align: center;
