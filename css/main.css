@@ -27,16 +27,38 @@ body {
     margin: 20px auto;
 }
 
+.common-header {
+    width: 100%;
+    height: 430px;
+    background-color: #2a2b2a;
+    background: #292829;
+    background-image: url('../img/gradient-banner.jpg');
+    background-size: cover;
+}
+
 .navbar {
     height: 115px;
-    background: #424242;
+    background: none;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
 }
 
+.navbar-brand img {
+    margin-top: 15px;
+    max-width: 223px;
+}
+
 .navbar-right {
     margin-top: 30px;
+}
+
+.navbar-inverse .navbar-nav>li {
+    margin: auto 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -48,12 +70,47 @@ body {
     box-shadow: none;
 }
 
+.btn.btn-primary {
+    background: #E91E63;
+    color: white !important;
+    border: none;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    background: #E91E63;
+}
+
+.navbar-inverse .navbar-nav>li>a.btn.btn-primary {
+    margin: 5px 0;
+    padding: 10px 30px;
+}
+
+.navbar-inverse .navbar-nav>li>a.btn.btn-primary:hover,
+.navbar-inverse .navbar-nav>li>a.btn.btn-primary:focus,
+.navbar-inverse .navbar-nav>.active>a.btn.btn-primary {
+    background: #E91E63 !important;
+    border: none;
+}
+
 .jumbotron {
-    background: #424242;
+    background: none;
     border: 0;
     margin: 0;
     padding: 20px 0;
     font-size: 21px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+h2 .highlight {
+    border-bottom: 13px solid #E91E63;
+    height: 35px;
+    display: inline-block;
 }
 
 .page-1 {
@@ -68,6 +125,15 @@ body {
 
 .page-1 h2 {
     font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.page-1 input, .page-1 .btn {
+    height: 59px;
+}
+
+.page-1 input {
+    width: 360px !important;
 }
 
 .btn-request-demo {
@@ -76,16 +142,6 @@ body {
     font-weight: 100;
     white-space: normal;
     margin: 30px auto;
-}
-
-.btn-primary {
-    background: #2196F3;
-    text-decoration: none !important;
-}
-
-.btn-primary:focus,
-.btn-primary:hover {
-    background: #1f72c7;
 }
 
 .page-text-image .container {
@@ -97,13 +153,9 @@ body {
 }
 
 .page-text-image .side-image img {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.page-text-image h2 {
-    text-align: center;
-    margin: 0 auto 30px auto;
+    min-width: 1154px;
+    height: 765px;
+    margin: -20px auto 0 -100px;
 }
 
 .page-text-image ul {
@@ -120,12 +172,23 @@ body {
 }
 
 .page-2 {
-    color: white;
-    background: #2196F3;
+    background: #E2E2E2;
 }
 
-.page-2 .side-image img {
-    margin-top: 100px;
+.excerpt h3 {
+    color: #0D0033;
+    font-size: 18px;
+}
+
+.excerpt {
+    color: #6A6A6A;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+img.side-icon {
+    height: 55px;
+    margin-top: 30px;
 }
 
 .page-3 {
@@ -381,7 +444,7 @@ h5 {
 }
 
 .page-partners {
-    background: #F7F8F9;
+    background: #cbcbcb;
 }
 
 .page-partners h2,
@@ -396,24 +459,168 @@ h5 {
 }
 
 .page-partners .logo {
-    height: 65px;
-    margin: 15px 45px;
+    height: 40px;
+    margin: 15px 35px;
 }
 
 .page-partners .logo-wide {
-    height: 50px;
-    margin: 22.5px 30px;
+    height: 30px;
+    margin: 22.5px 20px;
+}
+
+.logo-aifred-heath {
+    background: #344155 url('../img/logo-aifred-health.png') 50% 50% no-repeat;
+    background-size: 48px 48px;
+}
+
+.ticker-headline {
+    padding: 15px 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.ticker-headline .message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.ticker-headline .name {
+    font-size: 18px;
+}
+
+.ticker-headline .top-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.ticker-headline .pic {
+    display: inline-block;
+}
+
+.ticker-headline .pic > .logo-aifred-heath{
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    border-radius: 32px;
+}
+
+.ticker-headline .signature > .rest {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.ticker-headline .title {
+    font-size: 16px;
+    font-style: italic;
+    color: #9E9E9E;
+}
+
+.carousel.vertical .carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    margin: 40px 0 0 30px;
+    padding: 0;
+}
+
+.carousel.vertical .carousel-indicators li {
+    background-color: #CDCDCD;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.carousel.vertical .carousel-indicators .active {
+    background-color: #F62068;
+}
+
+.carousel.vertical .carousel-inner {
+    height: 100%;
+    width: auto;
+}
+.carousel.vertical .carousel-inner > .item {
+    width: auto;
+    padding-right: 50px;
+    -webkit-transition: 0.6s ease-in-out top;
+    transition: 0.6s ease-in-out top;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel.vertical .carousel-inner > .item {
+        -webkit-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
+    }
+    .carousel.vertical .carousel-inner > .item.next, .carousel.vertical .carousel-inner > .item.active.right {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        top: 0;
+    }
+    .carousel.vertical .carousel-inner > .item.prev, .carousel.vertical .carousel-inner > .item.active.left {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        top: 0;
+    }
+    .carousel.vertical .carousel-inner > .item.next.left, .carousel.vertical .carousel-inner > .item.prev.right, .carousel.vertical .carousel-inner > .item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        top: 0;
+    }
+}
+.carousel.vertical .carousel-inner > .active,
+.carousel.vertical .carousel-inner > .next,
+.carousel.vertical .carousel-inner > .prev {
+    display: block;
+}
+.carousel.vertical .carousel-inner > .active {
+    top: 0;
+}
+.carousel.vertical .carousel-inner > .next,
+.carousel.vertical .carousel-inner > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.carousel.vertical .carousel-inner > .next {
+    top: 100%;
+}
+.carousel.vertical .carousel-inner > .prev {
+    top: -100%;
+}
+.carousel.vertical .carousel-inner > .next.left,
+.carousel.vertical .carousel-inner > .prev.right {
+    top: 0;
+}
+.carousel.vertical .carousel-inner > .active.left {
+    top: -100%;
+}
+.carousel.vertical .carousel-inner > .active.right {
+    top: 100%;
+}
+
+.page-features {
+    background: #E2E2E2;
+}
+
+.page-last-cat {
+    width: 100%;
+    background-color: #2a2b2a;
+    background: #292829;
+    background-image: url('../img/gradient-banner.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.page-last-cat .container {
+    margin: 40px auto;
+    text-align: center;
 }
 
 .page-footer {
     font-size: 11px;
-    color: white;
     margin-bottom: -20px;
     padding: 80px 0 10px 0;
-    background: #2F2F33 url('../img/logo-footer.png');
-    background-size: 45px 51px;
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
 }
 
 footer p {

@@ -32,12 +32,12 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    
+
     <!--[if lte IE 7]>
     <style type="text/css">
-    .jivo-btn, .jivo-btn-icon  {
-       display: inline;
-    }
+        .jivo-btn, .jivo-btn-icon {
+            display: inline;
+        }
     </style>
     <![endif]-->
 </head>
@@ -46,136 +46,256 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="https://researchably.com"><img src="img/logo-researchably.png" class="img-responsive"></a>
+
+<div class="common-header">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://researchably.com"><img src="img/logo-researchably.png"
+                                                                             class="img-responsive"></a>
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+            </div><!--/.navbar-collapse -->
         </div>
-        <div id="navbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#what">What do we do?</a></li>
-                <li><a href="index.html#who">Who are we for?</a></li>
-                <li><a href="index.html#partners">Partners</a></li>
-            </ul>
-        </div><!--/.navbar-collapse -->
+    </nav>
+
+    <div class="jumbotron page-1" id="home">
+        <div class="container">
+            <h2>One discovery tool for all of your research needs</h2>
+
+            <div class="alert alert-success alert-dismissable" style="display: none;" id="thanks">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Thank you!</strong> We will get back to you very soon!
+            </div>
+
+            <p>
+                Researchably is the next generation search tool for biomedical sciences
+            </p>
+
+            <form action="https://formspree.io/contact@researchably.com" method="POST" class="form-inline">
+                <input type="hidden" name="_next" value="//researchably.com/index.html#thanks"/>
+                <input type="hidden" name="_subject" value="Demo request"/>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email"
+                           placeholder="Enter your e-mail address">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" value="Send">GET STARTED</button>
+            </form>
+        </div>
     </div>
-</nav>
+</div>
 
-<div class="jumbotron page-1" id="home">
+<div class="jumbotron page-partners">
     <div class="container">
-        <h2>One discovery tool for all of your research needs</h2>
-
-        <div class="alert alert-success alert-dismissable" style="display: none;" id="thanks">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Thank you!</strong> We will get back to you very soon!
+        <div class="logos">
+            <a href="http://futureworlds.com/" target="_blank"><img src="img/future-worlds.png" class="logo logo-wide"></a>
+            <a href="https://oadoi.org/" target="_blank"><img src="img/oadoi.png" class="logo"></a>
+            <a href="https://www.southampton.ac.uk/" target="_blank"><img src="img/university-of-southampton.png"
+                                                                          class="logo"></a>
+            <a href="https://www.digital-science.com/press-releases/scientific-search-tool-gets-boost-world-leading-innovation-grant-digital-science/"
+               target="_blank"><img src="img/digital-science.png" class="logo"></a>
+            <a href="http://altmetric.com/" target="_blank"><img src="img/altmetric.png" class="logo"></a>
         </div>
-    
-        <a class="btn btn-primary btn-lg btn-request-demo" href="#" role="button" data-toggle="modal" 
-           data-target="#request-demo">
-            Request a Demo
-        </a>
-
-        <p>
-            Researchably learns from your needs as a researcher to create a personalized and streamlined search experience.
-        </p>
-
-        <p>
-            We aggregate 10s of millions of resources and employ state-of-the-art Machine Learning to dramatically reduce the time you waste searching. 
-        </p>
     </div>
 </div>
 
 <div class="jumbotron page-2 page-text-image" id="what">
     <div class="container">
-        <h2>How can we help you?</h2>
-
         <div class="row">
             <div class="col-md-6 side-text">
-                <h3>Dive into the details</h3>
-                <p>
-                    Our bespoke filtering experience allows you to search  with granular precision in seconds. We eliminate the need for checkboxes and boolean operators by fundamentally understanding your queries.    
-                </p>
-
-                <h3>Explore the landscape</h3>
-                <p>
-                    Our technology can give you an overview of any research area, pointing you to key papers, people, historical events, and more. We look for patterns in the data to idenfity e.g. market gaps, anomalies in research activity and up and coming researchers. 
-                </p>
-
-                <h3>Stay up to date</h3>
-                <p>
-                    We constantly monitor major outputs, looking for information that will be of interest to you. With Researchably you will always be the first to learn of any patent, paper, press release, or conference that matters to you. 
-                </p>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <h2>ACCELERATE YOUR RESEARCH</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="img/klepsydra.svg" alt="Save time!" class="side-icon">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="excerpt">
+                            <h3>Save Time Searching</h3>
+                            Find the scientific documents from all of the sources that interest you, in one place.
+                            Comfortably search with an interface that understands you.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="img/results.svg" alt="Discover more!" class="side-icon">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="excerpt">
+                            <h3>Discover more relevant results</h3>
+                            Cut through the clutter with our AI powered Smart Search. Discover with granular precision
+                            with our  Dynamic Advanced Search.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="img/chat.svg" alt="Answer any question!" class="side-icon">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="excerpt">
+                            <h3>Answer any question, any time</h3>
+                            Get all your questions and requests taken care of by one of our information specialists,
+                            available 24/7 via live chat.
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 side-image">
-                <img src="img/search.png" class="img-responsive">
+                <img src="img/ipad-search.png" class="img-responsive">
             </div>
         </div>
     </div>
 </div>
 
-<div class="jumbotron page-3 page-text-image" id="who">
+<div class="jumbotron page-testimonials page-text-image" id="who">
     <div class="container">
-        <h2>Who are we for?</h2>
-        <p style="text-align: center;">Researchably is focused on helping biomedical researchers.</p>
-
         <div class="row">
-            <div class="col-md-6 side-text">
-                <h3>Do you work in a biomedical startup?</h3>
-                <p>
-                    We can provide you with free services to help get your company off the ground.
-                </p>
-
-                <h3>Do you work in a large company or as a consultant?</h3>
-                <p>
-                    Our services will provide you with a unique competitive edge. Get in touch for a tailored information discovery experience. 
-                </p>
-
-                <h3>None of the above?</h3>
-                <p>
-                    We can still help. Get in touch, tell us about yourself and we’ll let you know what we can do for you. 
-                </p>
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
+                <h2>TESTIMONIALS</h2>
             </div>
-            <div class="col-md-6 side-image">
-                <img src="img/test-tube.png" class="img-responsive">
+        </div>
+
+        <div id="carousel-testimonials" class="carousel vertical slide">
+            <div class="row">
+                <div class="col-xs-1">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                    </ol>
+                </div>
+                <div class="col-xs-11">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                            <div class="ticker-headline">
+                                <div class="top-name">
+                                    aifred health
+                                </div>
+                                <div class="message">You automate really painful work which takes up too much time. Really great for busy people who don't want to do mindless search tasks.</div>
+                                <div class="signature">
+                                    <div class="pic">
+                                        <div class="logo-aifred-heath"></div>
+                                    </div>
+                                    <div class="rest">
+                                        <div class="name">David Benrimoh</div>
+                                        <div class="title">CEO, aifred health</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="ticker-headline">
+                                <div class="top-name">
+                                    aifred health
+                                </div>
+                                <div class="message">Working with Researchably has just been amazing. We're so thankful for how much time you're saving us.</div>
+                                <div class="signature">
+                                    <div class="pic">
+                                        <div class="logo-aifred-heath"></div>
+                                    </div>
+                                    <div class="rest">
+                                        <div class="name">Kelly</div>
+                                        <div class="title">Director of Research, aifred health</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ticker-headline">
+                                <div class="top-name">
+                                    aifred health
+                                </div>
+                                <div class="message">This is is brilliant! I didn't even know I wanted this, but this is really useful! Great idea!</div>
+                                <div class="signature">
+                                    <div class="pic">
+                                        <div class="logo-aifred-heath"></div>
+                                    </div>
+                                    <div class="rest">
+                                        <div class="name">Sonia</div>
+                                        <div class="title">Director of Partnerships, aifred health</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="jumbotron page-partners" id="partners">
+<div class="jumbotron page-features" id="partners">
     <div class="container">
-        <div class="row meet-the-team">
-            <div class="col-md-12">
-                <h2>With the support of</h2>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
+                <h2>FEATURES</h2>
             </div>
         </div>
-        <div class="logos">
-            <a href="http://futureworlds.com/" target="_blank">
-                <img src="img/future-worlds.png" class="logo logo-wide">
-            </a>
-            <a href="https://oadoi.org/" target="_blank">
-                <img src="img/oadoi.png" class="logo">
-            </a>
-            <a href="https://www.southampton.ac.uk/" target="_blank">
-                <img src="img/university-of-southampton.png" class="logo">
-            </a>
-            <a href="https://www.digital-science.com/press-releases/scientific-search-tool-gets-boost-world-leading-innovation-grant-digital-science/" target="_blank">
-                <img src="img/digital-science.png" class="logo">    
-            </a>
-            <a href="http://altmetric.com/" target="_blank">
-                <img src="img/altmetric.png" class="logo">    
-            </a>
+        <div class="row">
+            <div class="col-md-1">
+                <img src="img/bulbs.svg" alt="Save time!" class="side-icon">
+            </div>
+            <div class="col-md-5">
+                <div class="excerpt">
+                    <h3>Smart Search</h3>
+                    An AI powered search mode that helps you define your search query on the fly and returns only
+                    the most relevant results. Built on top of algorithms trained on millions of biomedical research
+                    documents that learn from you as you search.
+                </div>
+            </div>
+            <div class="col-md-1">
+                <img src="img/pomoc.svg" alt="Save time!" class="side-icon">
+            </div>
+            <div class="col-md-5">
+                <div class="excerpt">
+                    <h3>Specialist, Taylored Support</h3>
+                    A team of trained information specialists, available 24/7 to help you tackle any biomedical
+                    search challenge - on demand. Manned by skilled and passionate searchers who will turn any question
+                    or request into answers and solutions
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <img src="img/racket dynamic.svg" alt="Save time!" class="side-icon">
+            </div>
+            <div class="col-md-5">
+                <div class="excerpt">
+                    <h3>Dynamic Advanced Search</h3>
+                    A powerfully precise search mode, letting you employ the tools you’re used to- including wildcards,
+                    boolean operators, and more. Designed from the ground up to run the longest, most intricate
+                    and specific queries.
+                </div>
+            </div>
+            <div class="col-md-1">
+                <img src="img/document.svg" alt="Save time!" class="side-icon">
+            </div>
+            <div class="col-md-5">
+                <div class="excerpt">
+                    <h3>One Hundred Million Documents</h3>
+                    An exhaustive, specialist database of biomedical documents, including 30M research papers,
+                    340K  clinical trial records 750K patents and tens of millions of company and researcher profiles.
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="jumbotron page-footer">
+<div class="jumbotron page-last-cat">
     <div class="container">
-        <footer>
-            <p>Copyright &copy; 2017.</p>
-        </footer>
-        <div class="psst">Psst.. We think you’re awesome!</div>
+        <p>Copyright &copy; 2017.</p>
     </div>
 </div>
 
@@ -188,8 +308,8 @@
                 <h4 class="modal-title">Thank you for your interest in Researchably!</h4>
             </div>
             <form action="https://formspree.io/contact@researchably.com" method="POST">
-                <input type="hidden" name="_next" value="//researchably.com/index.html#thanks" />
-                <input type="hidden" name="_subject" value="Demo request" />
+                <input type="hidden" name="_next" value="//researchably.com/index.html#thanks"/>
+                <input type="hidden" name="_subject" value="Demo request"/>
 
                 <div class="modal-body">
                     <p>Leave your details below, someone from the team will contact you within 24 hours!</p>
@@ -212,7 +332,8 @@
                     </div>
 
                     <p>
-                        We’ll never share your information with anyone, we’re only asking so we can start figuring out how to best assist you.
+                        We’ll never share your information with anyone, we’re only asking so we can start figuring out
+                        how to best assist you.
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -235,23 +356,58 @@
     if (window.location.hash === '#thanks') {
         jQuery('#thanks').show();
     }
+
+    jQuery(function(){
+        jQuery('.carousel').carousel({
+            interval: 2000
+        });
+    });
 </script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-96648998-2', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-96648998-2', 'auto');
+    ga('send', 'pageview');
 </script>
-    
+
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
-(function(){ var widget_id = 'ZfS8GicMb8';var d=document;var w=window;function l(){
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    (function () {
+        var widget_id = 'ZfS8GicMb8';
+        var d = document;
+        var w = window;
+
+        function l() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//code.jivosite.com/script/widget/' + widget_id;
+            var ss = document.getElementsByTagName('script')[0];
+            ss.parentNode.insertBefore(s, ss);
+        }
+
+        if (d.readyState == 'complete') {
+            l();
+        } else {
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
+    })();</script>
 <!-- {/literal} END JIVOSITE CODE -->
-    
+
 </body>
 </html>
