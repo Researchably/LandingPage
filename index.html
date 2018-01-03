@@ -75,12 +75,12 @@
                 Researchably is the next generation search tool for biomedical sciences
             </p>
 
-            <form action="https://formspree.io/contact@researchably.com" method="POST" class="form-inline">
+            <form action="https://formspree.io/contact@researchably.com" method="POST" class="form-inline" id="inline_request">
                 <input type="hidden" name="_next" value="//researchably.com/index.html#thanks"/>
                 <input type="hidden" name="_subject" value="Demo request"/>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" name="email"
+                    <input type="text" class="form-control" id="_email" name="email"
                            placeholder="Enter your e-mail address">
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg" value="Send">GET STARTED</button>
@@ -357,9 +357,28 @@
         jQuery('#thanks').show();
     }
 
-    jQuery(function(){
+    jQuery(function() {
         jQuery('.carousel').carousel({
             interval: 5000
+        });
+
+        jQuery('#inline_request').submit(function() {
+            var email = jQuery('#_email').val();
+
+            jQuery.ajax({
+                url: 'https://formspree.io/contact@researchably.com',
+                method: 'POST',
+                data: {
+                    _subject: 'Demo request (inline email)',
+                    email: email
+                },
+                dataType: 'json'
+            });
+
+            jQuery('#email').val(email);
+            jQuery('#request-demo').modal('show');
+
+            return false;
         });
     });
 </script>
